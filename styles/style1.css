@@ -1,0 +1,369 @@
+html, body {
+    background-color: hsl(240, 78%, 98%);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: hsl(233, 13%, 49%);
+}
+
+.page-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.8fr 1.1fr;
+}
+
+.first-column {
+    position: relative;
+    height: 100%;
+}
+
+.basic-membership-container {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.basic-membership {
+    display: grid;
+    grid-template-rows: 0.25fr 2.125fr 0.025fr 0.70fr 0.70fr 0.70fr 1.40fr;
+    align-items: center;
+    border-radius: 1rem;
+    border: none;
+    background-color: white;
+    height: 30rem;
+    width: 21rem;
+    padding: 2rem;
+}
+
+.basic-heading,
+.basic-price,
+.basic-info {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.basic-heading {
+    margin-bottom: 0;
+}
+
+.basic-price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basic-price-sign {
+    color: hsl(232, 13%, 33%);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.basic-price {
+    color: hsl(232, 13%, 33%);
+    font-style: normal;
+    font-size: 90px;
+    margin-bottom: 1rem;
+}
+
+.random-line-1 {
+    border-bottom: 1px solid black;
+}
+
+.basic-info {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.basic-learn-more {
+    margin-top: 0.25rem;
+    border-radius: 0.25rem;
+    border: none;
+    background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    height: 3rem;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.15rem;
+    color: white;
+    cursor: pointer;
+}
+
+.basic-learn-more-clicked {
+    background: white;
+    border: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+}
+
+.bottom-image {
+    position: fixed;
+    color: hsl(233, 13%, 49%);
+    height: 22rem;
+    width: 24rem;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.second-column {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    text-align: center;
+}
+
+.second-column-heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.option-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    margin-bottom: 1.5rem;
+}
+
+.option-text {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.option-container {
+    border-radius: 2rem;
+    border: none;
+    background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    height: 3.5vh;
+    width: 3.5vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 0.25rem;
+}
+
+.option-container-clicked {
+    justify-content: start;
+    padding-left: 0.25rem;
+    background: linear-gradient(135deg, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
+}
+
+.option-button {
+    border: none;
+    height: 70%;
+    border-radius: 2rem;
+    width: 1.40rem;
+    cursor: pointer;
+}
+
+.pro-membership-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    top: 0;
+}
+
+.pro-membership {
+    display: grid;
+    grid-template-rows: 0.25fr 2.125fr 0.025fr 0.70fr 0.70fr 0.70fr 1.40fr;
+    align-items: center;
+    border-radius: 1rem;
+    border: none;
+    background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    height: 30rem;
+    width: 100%;
+    padding: 3.5rem 2rem 3.5rem 2rem;
+    color: white;
+}
+
+.pro-heading,
+.pro-price,
+.pro-info {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.pro-heading {
+    font-size: 20px;
+}
+
+.pro-price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro-price-sign {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.pro-price {
+    font-style: normal;
+    font-size: 90px;
+    margin-bottom: 1rem;
+}
+
+.random-line-2 {
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+
+.pro-info {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+
+.pro-learn-more {
+    margin-top: 0.25rem;
+    border-radius: 0.25rem;
+    border: none;
+    background: white;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.15rem;
+    color: hsl(237, 63%, 64%);
+    cursor: pointer;
+}
+
+.pro-learn-more-clicked {
+    background: hsl(238, 68%, 71%);
+    border: 1px solid white;
+    color: white;
+}
+
+.third-column {
+    position: relative;
+    height: 100%;
+}
+
+.master-membership-container {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.master-membership {
+    display: grid;
+    border-radius: 1rem;
+    border: none;
+    background-color: white;
+    height: 30rem;
+    width: 21rem;
+    padding: 2rem;
+}
+
+.master-membership {
+    display: grid;
+    grid-template-rows: 0.25fr 2.125fr 0.025fr 0.70fr 0.70fr 0.70fr 1.40fr;
+    align-items: center;
+    border-radius: 1rem;
+    border: none;
+    background-color: white;
+    height: 30rem;
+    width: 21rem;
+    padding: 2rem;
+}
+
+.master-heading,
+.master-price,
+.master-info {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.master-heading {
+    font-size: 20px;
+}
+
+.master-price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.master-price-sign {
+    color: hsl(232, 13%, 33%);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.master-price {
+    color: hsl(232, 13%, 33%);
+    font-style: normal;
+    font-size: 90px;
+    margin-bottom: 1rem;
+}
+
+.random-line-1 {
+    border-bottom: 1px solid black;
+}
+
+.master-info {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.master-learn-more {
+    margin-top: 0.25rem;
+    border-radius: 0.25rem;
+    border: none;
+    background: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    height: 3rem;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.15rem;
+    color: white;
+    cursor: pointer;
+}
+
+.master-learn-more-clicked {
+    background: white;
+    border: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+}
+
+.top-image {
+    position: fixed;
+    color: hsl(233, 13%, 49%);
+    height: 45rem;
+    width: 28rem;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
